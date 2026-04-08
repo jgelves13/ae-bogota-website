@@ -1,0 +1,105 @@
+name: Sync impactbooks.store free books
+
+on:
+  schedule:
+    # 1st of every month at 10:17 UTC
+    - cron: '17 10 1 * *'
+  workflow_dispatch: # allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch impactbooks catalog and update resources.html
+        run: |
+          # Fetch the impactbooks.store EA collection page
+          CATALOG=$(curl -sL 'https://impactbooks.store/collections/effectivealtruism-org')
+
+          # Extract book titles from the catalog (product card titles)
+          BOOKS=$(echo "$CATALOG" | grep -oP 'class="full-unstyled-link"[^>]*>\s*\K[^<]+' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u)
+
+          if [ -z "$BOOKS" ]; then
+            # Fallback: try alternate selector
+            BOOKS=$(echo "$CATALOG" | grep -oP 'product-card__title[^>]*>\s*\K[^<]+' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u)
+          fi
+
+          if [ -z "$BOOKS" ]; then
+            echo "::warning::Could not parse any books from impactbooks.store. Skipping update."
+            exit 0
+          fi
+
+          echo "=== Books found on impactbooks.store ==="
+          echo "$BOOKS"
+          echo ""
+
+          # Map impactbooks titles to our resources.html book identifiers
+          # This mapping connects store titles to the title text in our HTML
+          declare -A BOOK_MAP
+          BOOK_MAP["Doing Good Better"]="Doing Good Better"
+          BOOK_MAP["The Precipice"]="The Precipice"
+          BOOK_MAP["Animal Liberation Now"]="Liberación Animal"
+          BOOK_MAP["The Life You Can Save"]="The Life You Can Save"
+          BOOK_MAP["80,000 Hours"]="80,000 Hours"
+          BOOK_MAP["The Most Good You Can Do"]="The Most Good You Can Do"
+          BOOK_MAP["The Scout Mindset"]="La Mentalidad del Explorador"
+          BOOK_MAP["The Alignment Problem"]="The Alignment Problem"
+          BOOK_MAP["Famine, Affluence, and Morality"]="Famine, Affluence, and Morality"
+
+          FREE_LINK_BLOCK='          <hr class="res-hr">\n          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">\n            <span data-lang="es">Pedir copia gratis<\/span><span data-lang="en">Request a free copy<\/span>\n            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"\/><\/svg>\n          <\/a>'
+
+          CHANGED=false
+
+          for STORE_TITLE in "${!BOOK_MAP[@]}"; do
+            OUR_TITLE="${BOOK_MAP[$STORE_TITLE]}"
+            # Check if this book is on impactbooks.store
+            if echo "$BOOKS" | grep -qi "$STORE_TITLE"; then
+              IN_STORE=true
+            else
+              IN_STORE=false
+            fi
+
+            # Check if this book currently has "Pedir copia gratis" in resources.html
+            # Look for the title followed by a free link block
+            if grep -A5 "$OUR_TITLE" resources.html | grep -q "res-request"; then
+              HAS_LINK=true
+            else
+              HAS_LINK=false
+            fi
+
+            if $IN_STORE && ! $HAS_LINK; then
+              echo "ADD free link: $OUR_TITLE (found as '$STORE_TITLE' on store)"
+              CHANGED=true
+            elif ! $IN_STORE && $HAS_LINK; then
+              echo "REMOVE free link: $OUR_TITLE (no longer on store)"
+              CHANGED=true
+            fi
+          done
+
+          if ! $CHANGED; then
+            echo "No changes needed — resources.html is in sync with impactbooks.store"
+            exit 0
+          fi
+
+          echo ""
+          echo "::notice::Changes detected. Please update resources.html manually or open a PR."
+          echo "Current impactbooks catalog: $BOOKS"
+
+      - name: Create issue if changes needed
+        if: failure() || success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { execSync } = require('child_process');
+            const output = execSync('cat $GITHUB_STEP_SUMMARY || echo "No summary"').toString();
+            // Only create issue if changes were detected
+            if (output.includes('ADD free link') || output.includes('REMOVE free link')) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `[Auto] Sync impactbooks.store free books — ${new Date().toISOString().slice(0,7)}`,
+                body: `The monthly impactbooks.store check found changes needed.\n\nPlease review and update \`resources.html\` accordingly.\n\nSee workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+                labels: ['maintenance']
+              });
+            }
