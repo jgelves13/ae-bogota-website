@@ -30,8 +30,8 @@
   --border-lighter: rgba(0, 0, 0, 0.06);
 
   /* Spacing */
-  --section-padding: 5rem;
-  --section-padding-lg: 6.875rem;
+  --section-padding: 3.5rem;
+  --section-padding-lg: 4.5rem;
   --max-width: 1240px;
   --max-width-narrow: 752px;
   --nav-height: 76px;
@@ -1074,7 +1074,7 @@ img.nav-logo-icon {
 /* === Page Header (inner pages) === */
 .page-header {
   background-color: var(--bg-paper);
-  padding: 4rem 0 2rem;
+  padding: 3rem 0 1.5rem;
   margin-top: var(--nav-height);
 }
 
@@ -2227,7 +2227,7 @@ hr {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 3.5rem;
+    --section-padding: 2.5rem;
   }
 
   html { font-size: 15px; }
