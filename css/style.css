@@ -1333,6 +1333,11 @@ img.nav-logo-icon {
 .team-card {
   text-align: center;
 }
+.team-card > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .team-avatar {
   width: 80px;
@@ -1377,7 +1382,7 @@ img.nav-logo-icon {
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
   line-height: 1.6;
-  min-height: 4.5em;
+  flex: 1;
 }
 
 .team-card .social-links {
