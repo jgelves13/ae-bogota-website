@@ -1383,6 +1383,7 @@ img.nav-logo-icon {
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
   line-height: 1.6;
+  min-height: 4.5em;
 }
 
 .team-card .social-links {
