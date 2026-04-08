@@ -1333,7 +1333,6 @@ img.nav-logo-icon {
 .team-card {
   text-align: center;
   transition: transform var(--transition), box-shadow var(--transition);
-  border-top: 3px solid var(--color-link-teal);
 }
 .team-card:hover {
   transform: translateY(-4px);
