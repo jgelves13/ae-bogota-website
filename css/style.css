@@ -30,8 +30,8 @@
   --border-lighter: rgba(0, 0, 0, 0.06);
 
   /* Spacing */
-  --section-padding: 3.5rem;
-  --section-padding-lg: 4.5rem;
+  --section-padding: 2.5rem;
+  --section-padding-lg: 3rem;
   --max-width: 1240px;
   --max-width-narrow: 752px;
   --nav-height: 76px;
@@ -1428,7 +1428,7 @@ img.nav-logo-icon {
 
 /* === Section Header / Label === */
 .section-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header h2 {
@@ -2227,7 +2227,7 @@ hr {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 2.5rem;
+    --section-padding: 2rem;
   }
 
   html { font-size: 15px; }
