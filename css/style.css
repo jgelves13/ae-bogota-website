@@ -1699,73 +1699,105 @@ img.nav-logo-icon {
 .res-grid--orgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
-/* Org card horizontal layout */
+/* Org card */
 .res-card--org {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.25rem;
-  padding: 1.5rem 1.75rem;
-  background: rgba(255, 255, 255, 0.45);
-  border: 0.8px solid rgba(0, 0, 0, 0.06);
-  transition: all 0.25s ease;
+  gap: 1.125rem;
+  padding: 1.375rem 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: all 0.2s ease;
   text-decoration: none;
   color: var(--text-body);
+  position: relative;
+}
+
+.res-card--org::after {
+  content: "→";
+  position: absolute;
+  top: 1.375rem;
+  right: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.2s ease;
 }
 
 .res-card--org:hover {
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.15);
   opacity: 1;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.res-card--org:hover::after {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Dark section overrides */
 .section-dark .res-card--org {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-dark .res-card--org::after {
+  color: var(--text-light-muted);
 }
 
 .section-dark .res-card--org:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Sand section overrides */
 .bg-sand-dark .res-card--org {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .bg-sand-dark .res-card--org:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: #fff;
 }
 
+/* Logo container */
 .res-card--org .res-logo {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  border-radius: 12px;
-  padding: 0;
-  background: transparent;
+  border-radius: 10px;
+  padding: 6px;
+  background: var(--bg-paper);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
+}
+
+.section-dark .res-card--org .res-logo {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.bg-sand-dark .res-card--org .res-logo {
+  background: #fff;
 }
 
 .res-card--org .res-title {
   margin: 0 0 6px;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.2px;
   line-height: 1.3;
 }
 
 .res-card--org .res-desc {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
@@ -1774,6 +1806,7 @@ img.nav-logo-icon {
 .res-card--org .res-body {
   flex: 1;
   min-width: 0;
+  padding-right: 1.25rem;
 }
 
 /* Article list: text-only links */
@@ -1854,15 +1887,6 @@ img.nav-logo-icon {
 
 .section-dark .res-card .res-request {
   color: var(--text-light);
-}
-
-.section-dark .res-card--org {
-  border-color: rgba(255,255,255,0.12);
-}
-
-.section-dark .res-card--org .res-logo {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.15);
 }
 
 /* Section divider between sub-sections */
