@@ -259,7 +259,7 @@ html[lang="en"] div[data-lang="es"] { display: none; }
   z-index: 1000;
   font-family: var(--font-ui);
   transition: background-color var(--transition);
-  border-bottom: 2px solid var(--color-salmon);
+  border-bottom: none;
 }
 
 .navbar .container {
