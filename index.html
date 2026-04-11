@@ -8,10 +8,13 @@
   <meta property="og:title" content="Altruismo Eficaz Bogotá">
   <meta property="og:description" content="Comunidad de Altruismo Eficaz en Bogotá. Combinamos compasión y razón para hacer el mayor bien posible.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://website-three-orpin.vercel.app/img/hero.jpg">
+  <link rel="canonical" href="https://website-three-orpin.vercel.app/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +24,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo">
         <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-        <span>AE Bogotá</span>
+        <span>Altruismo Eficaz Bogotá</span>
       </a>
       <div class="nav-links">
-        <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-        <a href="resources.html"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+        <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+        <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
         <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-        <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+        <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
         <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
       </div>
       <div class="nav-right">
         <div class="lang-toggle">
@@ -46,12 +49,12 @@
   <!-- Mobile Nav -->
   <div class="mobile-nav">
     <a href="index.html" class="active"><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a>
-    <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-    <a href="resources.html"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+    <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+    <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
     <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-    <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+    <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
     <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
   </div>
 
   <!-- Hero -->
@@ -66,13 +69,9 @@
         <span data-lang="en">We are Bogotá's Effective Altruism community. We use evidence and rigorous analysis to find the best ways to help others.</span>
       </p>
       <div class="hero-buttons">
-        <a href="about-ea.html" class="btn btn-white btn-lg">
-          <span data-lang="es">¿Qué es el AE?</span>
-          <span data-lang="en">What is EA?</span>
-        </a>
-        <a href="get-involved.html" class="btn btn-light btn-lg">
-          <span data-lang="es">Participa</span>
-          <span data-lang="en">Get Involved</span>
+        <a href="events.html" class="btn btn-white btn-lg">
+          <span data-lang="es">Asiste al próximo evento</span>
+          <span data-lang="en">Come to our next event</span>
         </a>
       </div>
     </div>
@@ -136,8 +135,8 @@
               <span data-lang="en">1. It's important to help others</span>
             </h4>
             <p>
-              <span data-lang="es">Cuando las personas están en necesidad y podemos ayudarlas, debemos hacerlo. Incluso un ingreso mediano en un país rico te ubica en el 5% más rico del mundo.</span>
-              <span data-lang="en">When people are in need and we can help them, we should. Even a median income in a rich country puts you in the global top 5%.</span>
+              <span data-lang="es">Cuando las personas están en necesidad y podemos ayudarlas, debemos hacerlo. Incluso ganar 3 millones de pesos netos al mes en Colombia te hace más rico que el <a href="https://www.givingwhatwecan.org/how-rich-am-i?income=36000000&countryCode=COL&numAdults=1&numChildren=0" target="_blank" rel="noopener">88% de la población mundial</a>.</span>
+              <span data-lang="en">When people are in need and we can help them, we should. Even earning 3 million pesos a month after taxes in Colombia makes you richer than <a href="https://www.givingwhatwecan.org/how-rich-am-i?income=36000000&countryCode=COL&numAdults=1&numChildren=0" target="_blank" rel="noopener">88% of the world's population</a>.</span>
             </p>
           </div>
 
@@ -202,58 +201,131 @@
 
       <div class="impact-grid fade-in">
         <a href="https://www.againstmalaria.com/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80" alt="" loading="lazy"></div>
+          <div class="impact-card-img"><img src="img/impact-amf.jpg" alt="Against Malaria Foundation" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat">300M+</span>
-            <h4><span data-lang="es">Mosquiteros distribuidos contra la malaria</span><span data-lang="en">Bed nets distributed against malaria</span></h4>
+            <span class="impact-stat">370M</span>
+            <h4><span data-lang="es">Mosquiteros financiados contra la malaria</span><span data-lang="en">Bed nets funded against malaria</span></h4>
             <span class="impact-org">Against Malaria Foundation</span>
           </div>
         </a>
 
         <a href="https://www.givedirectly.org/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="" loading="lazy"></div>
+          <div class="impact-card-img"><img src="img/impact-gd.jpg" alt="GiveDirectly" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat">$800M+</span>
-            <h4><span data-lang="es">En transferencias directas a 1.6M personas</span><span data-lang="en">In cash transfers to 1.6M people</span></h4>
+            <span class="impact-stat"><span data-lang="es">USD 1.000M+</span><span data-lang="en">US$1B+</span></span>
+            <h4><span data-lang="es">En transferencias directas a 2M+ personas</span><span data-lang="en">In cash transfers to 2M+ people</span></h4>
             <span class="impact-org">GiveDirectly</span>
           </div>
         </a>
 
-        <a href="https://leadelimination.org/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80" alt="" loading="lazy"></div>
+        <a href="https://www.charityentrepreneurship.com/" class="impact-card">
+          <div class="impact-card-img"><img src="img/impact-ce.jpg" alt="Charity Entrepreneurship" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat"><span data-lang="es">Millones</span><span data-lang="en">Millions</span></span>
-            <h4><span data-lang="es">De niños protegidos de la exposición al plomo</span><span data-lang="en">Of children protected from lead exposure</span></h4>
-            <span class="impact-org">LEEP</span>
+            <span class="impact-stat">50+</span>
+            <h4><span data-lang="es">Organizaciones de alto impacto incubadas, sirviendo a 75M personas</span><span data-lang="en">High-impact charities incubated, serving 75M people</span></h4>
+            <span class="impact-org">Charity Entrepreneurship</span>
           </div>
         </a>
 
-        <a href="https://www.openphilanthropy.org/research/how-the-open-wing-alliance-has-helped-improve-the-lives-of-hens/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&q=80" alt="" loading="lazy"></div>
+        <a href="https://openwingalliance.org/" class="impact-card">
+          <div class="impact-card-img"><img src="img/impact-owa.jpg" alt="Open Wing Alliance" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat">100M+</span>
-            <h4><span data-lang="es">Gallinas liberadas de jaulas en batería</span><span data-lang="en">Hens freed from battery cages</span></h4>
+            <span class="impact-stat">3.000+</span>
+            <h4><span data-lang="es">Compromisos corporativos libres de jaulas en 72 países</span><span data-lang="en">Corporate cage-free commitments across 72 countries</span></h4>
             <span class="impact-org">Open Wing Alliance</span>
           </div>
         </a>
 
         <a href="https://www.1daysooner.org/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&q=80" alt="" loading="lazy"></div>
+          <div class="impact-card-img"><img src="img/impact-1ds.jpg" alt="1Day Sooner" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat">30,000+</span>
+            <span class="impact-stat">40.000+</span>
             <h4><span data-lang="es">Voluntarios para ensayos clínicos acelerados</span><span data-lang="en">Volunteers for accelerated clinical trials</span></h4>
             <span class="impact-org">1Day Sooner</span>
           </div>
         </a>
 
         <a href="https://80000hours.org/" class="impact-card">
-          <div class="impact-card-img"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80" alt="" loading="lazy"></div>
+          <div class="impact-card-img"><img src="img/impact-80k.jpg" alt="80,000 Hours" loading="lazy"></div>
           <div class="impact-card-body">
-            <span class="impact-stat">80,000</span>
-            <h4><span data-lang="es">Horas de carrera orientadas al impacto</span><span data-lang="en">Career hours guided toward impact</span></h4>
+            <span class="impact-stat">3.000+</span>
+            <h4><span data-lang="es">Cambios de carrera hacia trabajos de alto impacto</span><span data-lang="en">Career changes toward high-impact work</span></h4>
             <span class="impact-org">80,000 Hours</span>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colombia Impact -->
+  <section class="section bg-paper impact-section">
+    <div class="container">
+      <div class="fade-in">
+        <h2>
+          <span data-lang="es">Impacto en Colombia</span>
+          <span data-lang="en">Impact in Colombia</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang="es">Organizaciones de altruismo eficaz y aliadas que están generando cambios concretos en Colombia.</span>
+          <span data-lang="en">Effective altruism and aligned organizations driving concrete change in Colombia.</span>
+        </p>
+      </div>
+
+      <div class="impact-grid fade-in">
+        <a href="https://www.poverty-action.org/country/colombia" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-ipa.jpg" alt="IPA Colombia" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">3M+</span>
+            <h4><span data-lang="es">Hogares alcanzados por la expansión de Ingreso Solidario, aprobada por el Congreso con base en evidencia de IPA</span><span data-lang="en">Households reached by the Ingreso Solidario expansion, approved by Congress based on IPA evidence</span></h4>
+            <span class="impact-org">IPA Colombia</span>
+          </div>
+        </a>
+
+        <a href="https://actra.ngo/" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-actra.jpg" alt="ACTRA" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">4×</span>
+            <h4><span data-lang="es">La tasa de homicidios en Colombia supera 4 veces el promedio mundial. ACTRA es la primera organización en escalar terapia cognitivo-conductual para prevención del crimen en América Latina.</span><span data-lang="en">Colombia's homicide rate is 4x the global average. ACTRA is the first organization to scale cognitive behavioral therapy for crime prevention in Latin America.</span></h4>
+            <span class="impact-org">ACTRA</span>
+          </div>
+        </a>
+
+        <a href="https://sinergiaanimal.org/" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-sinergia.jpg" alt="Sinergia Animal" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">1ª ONG</span>
+            <h4><span data-lang="es">Invitada al grupo de trabajo del gobierno colombiano sobre bienestar animal en el transporte, tras investigaciones encubiertas que documentaron el maltrato en Colombia.</span><span data-lang="en">First NGO invited to join a Colombian government working group on animal welfare in transport, following undercover investigations documenting cruelty in Colombia.</span></h4>
+            <span class="impact-org">Sinergia Animal</span>
+          </div>
+        </a>
+
+        <a href="https://fundacionveg.org/" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-veg.jpg" alt="Fundación Veg" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">130+</span>
+            <h4><span data-lang="es">Empresas licenciadas con V-Label: única autoridad de certificación vegana en Colombia y representante oficial en 4 países más de América Latina, desde 2013.</span><span data-lang="en">Companies licensed with V-Label: the only vegan certification authority in Colombia and official representative in 4 other Latin American countries, since 2013.</span></h4>
+            <span class="impact-org">Fundación Veg</span>
+          </div>
+        </a>
+
+        <a href="https://grana-org.lovable.app/" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-grana.jpg" alt="GRANA" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">Ley 2460</span>
+            <h4><span data-lang="es">Primera organización en llevar una intervención de salud mental basada en evidencia a colegios públicos colombianos mediante docentes, respaldada por la ley que exige bienestar emocional escolar (2026).</span><span data-lang="en">First organization to bring an evidence-based mental health intervention to Colombian public schools via teachers, backed by the 2026 law mandating school emotional wellbeing.</span></h4>
+            <span class="impact-org">GRANA</span>
+          </div>
+        </a>
+
+        <a href="https://www.orcg.info" class="impact-card impact-card-light">
+          <div class="impact-card-img"><img src="img/impact-orcg.jpg" alt="ORCG" loading="lazy"></div>
+          <div class="impact-card-body">
+            <span class="impact-stat">4 países</span>
+            <h4><span data-lang="es">Asesorando a Colombia, España, Chile y Costa Rica en la implementación del Marco de la OCDE para la gestión de riesgos críticos emergentes.</span><span data-lang="en">Advising Colombia, Spain, Chile, and Costa Rica on implementing the OECD Framework for Managing Emerging Critical Risks.</span></h4>
+            <span class="impact-org">ORCG</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -286,45 +358,45 @@
           <span data-lang="en">Find ways to help</span>
         </h2>
         <p class="section-subtitle">
-          <span data-lang="es">Hay muchas formas de actuar — a través de donaciones, carrera profesional, voluntariado y más.</span>
-          <span data-lang="en">There are many ways to take action — through donations, career choices, volunteering, and more.</span>
+          <span data-lang="es">Hay muchas formas de actuar: donaciones, carrera profesional, voluntariado y más.</span>
+          <span data-lang="en">There are many ways to take action: donations, career choices, volunteering, and more.</span>
         </p>
 
         <div class="ways-cards">
-          <a href="https://www.effectivealtruism.org/courses/bootcamp" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80" alt="" loading="lazy"></div>
+          <a href="https://www.effectivealtruism.org/courses" class="way-card">
+            <div class="way-card-img"><img src="img/ways-course.jpg" alt="" loading="lazy"></div>
             <h5><span data-lang="es">Toma un curso gratuito</span><span data-lang="en">Take a free online course</span></h5>
             <p><span data-lang="es">Un programa de 8 semanas que explora las ideas centrales del altruismo eficaz con una comunidad global.</span><span data-lang="en">An 8-week program exploring the core ideas of effective altruism with a global community.</span></p>
           </a>
 
-          <a href="about-ea.html" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80" alt="" loading="lazy"></div>
-            <h5><span data-lang="es">Lee la introducción</span><span data-lang="en">Read the intro essay</span></h5>
-            <p><span data-lang="es">Comprende los principios, las áreas de causa y el marco de pensamiento del altruismo eficaz.</span><span data-lang="en">Understand the principles, cause areas, and thinking framework of effective altruism.</span></p>
-          </a>
-
           <a href="https://www.givingwhatwecan.org/best-charities-to-donate-to-2025" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&q=80" alt="" loading="lazy"></div>
+            <div class="way-card-img"><img src="img/ways-donate.jpg" alt="" loading="lazy"></div>
             <h5><span data-lang="es">Dona a organizaciones efectivas</span><span data-lang="en">Donate to effective charities</span></h5>
             <p><span data-lang="es">Haz que tu donación llegue más lejos eligiendo las organizaciones de mayor impacto comprobado.</span><span data-lang="en">Make your donation go further by choosing charities with the highest proven impact.</span></p>
           </a>
 
           <a href="https://www.80000hours.org/" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="" loading="lazy"></div>
-            <h5><span data-lang="es">Orientación de carrera</span><span data-lang="en">Get career guidance</span></h5>
-            <p><span data-lang="es">Pasarás 80,000 horas en tu carrera — es una de tus mejores oportunidades para generar impacto.</span><span data-lang="en">You'll spend 80,000 hours on your career — one of your best opportunities for impact.</span></p>
+            <div class="way-card-img"><img src="img/ways-career.jpg" alt="" loading="lazy"></div>
+            <h5><span data-lang="es">Obtén orientación de carrera</span><span data-lang="en">Get career guidance</span></h5>
+            <p><span data-lang="es">Pasarás 80.000 horas en tu carrera. Es una de tus mejores oportunidades para generar impacto.</span><span data-lang="en">You'll spend 80,000 hours on your career. It's one of your best opportunities for impact.</span></p>
           </a>
 
           <a href="get-involved.html" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="" loading="lazy"></div>
+            <div class="way-card-img"><img src="img/ways-join.jpg" alt="" loading="lazy"></div>
             <h5><span data-lang="es">Únete a Altruismo Eficaz Bogotá</span><span data-lang="en">Join Effective Altruism Bogotá</span></h5>
             <p><span data-lang="es">Conecta con profesionales en Bogotá comprometidos con el impacto basado en evidencia.</span><span data-lang="en">Connect with professionals in Bogotá committed to evidence-based impact.</span></p>
           </a>
 
-          <a href="events.html" class="way-card">
-            <div class="way-card-img"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="" loading="lazy"></div>
-            <h5><span data-lang="es">Asiste a un evento</span><span data-lang="en">Attend an event</span></h5>
-            <p><span data-lang="es">Charlas, talleres y grupos de lectura en Bogotá y online.</span><span data-lang="en">Talks, workshops, and reading groups in Bogotá and online.</span></p>
+          <a href="https://funds.effectivealtruism.org/" class="way-card">
+            <div class="way-card-img"><img src="img/ways-funding.jpg" alt="" loading="lazy"></div>
+            <h5><span data-lang="es">Busca financiación para un proyecto de alto impacto</span><span data-lang="en">Seek funding for a high-impact project</span></h5>
+            <p><span data-lang="es">EA Funds ha otorgado más de 1.500 subvenciones para proyectos de alto impacto en todo el mundo.</span><span data-lang="en">EA Funds has awarded over 1,500 grants for high-impact projects around the world.</span></p>
+          </a>
+
+          <a href="https://www.effectivealtruism.org/ea-global" class="way-card">
+            <div class="way-card-img"><img src="img/ways-conference.jpg" alt="" loading="lazy"></div>
+            <h5><span data-lang="es">Asiste a una conferencia</span><span data-lang="en">Attend a conference</span></h5>
+            <p><span data-lang="es">EA Global y EAGx reúnen expertos y oportunidades para aprender más y avanzar tu carrera.</span><span data-lang="en">EA Global and EAGx feature experts and opportunities to learn more and advance your career.</span></p>
           </a>
         </div>
 
@@ -346,7 +418,7 @@
           <span data-lang="es">«No es fácil escapar de la pobreza, pero un sentido de posibilidad y un poco de ayuda bien dirigida pueden a veces tener efectos sorprendentemente grandes.»</span>
           <span data-lang="en">"It is not easy to escape from poverty, but a sense of possibility and a little bit of well-targeted help can sometimes have surprisingly large effects."</span>
         </blockquote>
-        <cite>— Prof. Abhijit Banerjee, <span data-lang="es">Premio Nobel de Economía 2019</span><span data-lang="en">Nobel Laureate in Economics 2019</span></cite>
+        <cite>Prof. Abhijit Banerjee, <span data-lang="es">Premio Nobel de Economía 2019</span><span data-lang="en">Nobel Laureate in Economics 2019</span></cite>
       </div>
     </div>
   </section>
@@ -360,25 +432,25 @@
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" style="color: white;">
             <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-            <span>AE Bogotá</span>
+            <span>Altruismo Eficaz Bogotá</span>
           </a>
           <p>
             <span data-lang="es">Comunidad de Altruismo Eficaz en Bogotá, Colombia. Combinamos compasión y razón para hacer el mayor bien posible.</span>
             <span data-lang="en">Effective Altruism community in Bogotá, Colombia. Combining compassion and reason to do the most good.</span>
           </p>
           <div class="footer-social">
-            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener noreferrer" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
           </div>
         </div>
 
         <div>
-          <h4><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></h4>
+          <h4><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></h4>
           <div class="footer-links">
-            <a href="get-involved.html"><span data-lang="es">Únete</span><span data-lang="en">Join Us</span></a>
+            <a href="get-involved.html"><span data-lang="es">Pasa a la acción</span><span data-lang="en">Take action</span></a>
             <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-            <a href="get-involved.html#one-on-one">1-on-1</a>
-            <a href="get-involved.html#volunteer"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
+            <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
+            <a href="team.html#join"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
           </div>
         </div>
 
@@ -401,8 +473,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 AE Bogotá</span>
-        <a href="mailto:contacto@eabogota.org">contacto@eabogota.org</a>
+        <span>&copy; 2026 Altruismo Eficaz Bogotá</span>
       </div>
     </div>
   </footer>
