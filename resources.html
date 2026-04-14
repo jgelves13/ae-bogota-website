@@ -8,10 +8,13 @@
   <meta property="og:title" content="Recursos — Altruismo Eficaz Bogotá">
   <meta property="og:description" content="Recursos de Altruismo Eficaz: libros, podcasts, artículos, carreras de impacto y donaciones efectivas.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://website-three-orpin.vercel.app/img/hero.jpg">
+  <link rel="canonical" href="https://website-three-orpin.vercel.app/resources.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +24,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo">
         <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-        <span>AE Bogotá</span>
+        <span>Altruismo Eficaz Bogotá</span>
       </a>
       <div class="nav-links">
-        <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-        <a href="resources.html" class="active"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+        <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+        <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
         <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-        <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+        <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
         <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
       </div>
       <div class="nav-right">
         <div class="lang-toggle">
@@ -46,12 +49,12 @@
   <!-- Mobile Nav -->
   <div class="mobile-nav">
     <a href="index.html"><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a>
-    <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-    <a href="resources.html" class="active"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+    <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+    <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
     <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-    <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+    <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
     <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
   </div>
 
   <!-- Page Header -->
@@ -62,14 +65,67 @@
         <span data-lang="en">Resources</span>
       </h1>
       <p>
-        <span data-lang="es">Hemos reunido los mejores libros, podcasts, guías de carrera y plataformas de donación para que puedas aprender, actuar y generar el mayor impacto posible.</span>
-        <span data-lang="en">We've gathered the best books, podcasts, career guides, and giving platforms so you can learn, take action, and maximize your impact.</span>
+        <span data-lang="es">Videos, libros, podcasts, guías de carrera, plataformas de donación y oportunidades de financiamiento para aprender, actuar y generar el mayor impacto posible.</span>
+        <span data-lang="en">Videos, books, podcasts, career guides, giving platforms, and funding opportunities to learn, take action, and maximize your impact.</span>
       </p>
     </div>
   </section>
 
+  <!-- ========== VIDEOS ========== -->
+  <section class="section bg-paper" id="videos">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Videos</h2>
+        <p>
+          <span data-lang="es">Ideas y conceptos del altruismo eficaz. También puedes explorar charlas de conferencias EA en <a href="https://www.youtube.com/@EffectiveAltruismOfficial" target="_blank" rel="noopener noreferrer">este canal de YouTube</a>.</span>
+          <span data-lang="en">Ideas and concepts from effective altruism. You can also browse EA conference talks on <a href="https://www.youtube.com/@EffectiveAltruismOfficial" target="_blank" rel="noopener noreferrer">this YouTube channel</a>.</span>
+        </p>
+      </div>
+
+      <div class="res-grid--videos fade-in">
+
+        <a href="https://www.youtube.com/watch?v=48VAQtGmfWY" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/48VAQtGmfWY/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">An introduction to effective altruism</h5>
+          <div class="res-author">Ajeya Cotra</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=WyprXhvGVYk" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/WyprXhvGVYk/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">How can we do the most good for the world</h5>
+          <div class="res-author">Will MacAskill |TED</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Diuv3XZQXyc" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/Diuv3XZQXyc/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">The why and how of effective altruism</h5>
+          <div class="res-author">Peter Singer |TED</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=w4RLfVxTGH4" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/w4RLfVxTGH4/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">Why you think you're right - even if you're wrong</h5>
+          <div class="res-author">Julia Galef |TED</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=irQ1T6kMKlg" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/irQ1T6kMKlg/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">What it really takes to found a high impact charity</h5>
+          <div class="res-author">Joey Savoie</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=hk_7zdOoK9w" target="_blank" rel="noopener noreferrer" class="res-card res-card--video">
+          <div class="res-img"><img src="https://img.youtube.com/vi/hk_7zdOoK9w/mqdefault.jpg" alt="" loading="lazy"></div>
+          <h5 class="res-title">Starting, proving, & scaling highly cost-effective interventions</h5>
+          <div class="res-author">Svetha Janumpalli</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ========== BOOKS ========== -->
-  <section class="section bg-paper" id="reading">
+  <section class="section bg-sand-dark" id="reading">
     <div class="container">
       <div class="section-header fade-in">
         <h2>
@@ -80,100 +136,85 @@
 
       <div class="res-grid--books fade-in">
 
-        <!-- Spanish books — paid -->
+        <!-- Spanish books |paid -->
         <div class="res-card res-card--book">
-          <a href="https://www.altruismoracional.com/p/libro" target="_blank" rel="noopener">
+          <a href="https://www.altruismoracional.com/p/libro" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/altruismo-racional.png" alt=""></div>
             <h5 class="res-title">Altruismo Racional <span class="res-author-inline">Pablo Melchor</span></h5>
           </a>
         </div>
 
         <div class="res-card res-card--book">
-          <a href="https://www.planetadelibros.com/libro-lo-que-le-debemos-al-futuro/379550" target="_blank" rel="noopener">
+          <a href="https://www.planetadelibros.com/libro-lo-que-le-debemos-al-futuro/379550" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/lo-que-le-debemos.jpg" alt=""></div>
             <h5 class="res-title">Lo que le debemos al futuro <span class="res-author-inline">William MacAskill</span></h5>
           </a>
         </div>
 
         <div class="res-card res-card--book">
-          <a href="https://www.buscalibre.com.co/libros/search?q=la+mentalidad+del+explorador+julia+galef" target="_blank" rel="noopener">
+          <a href="https://www.buscalibre.com.co/libros/search?q=la+mentalidad+del+explorador+julia+galef" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/mentalidad-explorador.webp" alt=""></div>
             <h5 class="res-title">La Mentalidad del Explorador <span class="res-author-inline">Julia Galef</span></h5>
           </a>
         </div>
 
-        <!-- Spanish books — free copy available -->
+        <!-- Spanish books |free copy available -->
         <div class="res-card res-card--book">
-          <a href="https://www.buscalibre.com.co/libros/search?q=liberacion+animal+peter+singer" target="_blank" rel="noopener">
+          <a href="https://www.buscalibre.com.co/libros/search?q=liberacion+animal+peter+singer" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/liberacion-animal.webp" alt=""></div>
             <h5 class="res-title">Liberación Animal <span class="res-author-inline">Peter Singer</span></h5>
           </a>
           <hr class="res-hr">
-          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">
+          <a href="https://airtable.com/apppjW9FcMACwrzcD/shrncknVHv6DJPewU" target="_blank" rel="noopener noreferrer" class="res-request">
             <span data-lang="es">Pedir copia gratis</span><span data-lang="en">Request a free copy</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
         </div>
 
-        <!-- English books — paid -->
+        <!-- English books |free copy available -->
         <div class="res-card res-card--book">
-          <a href="https://www.petersinger.info/shop/p/the-most-good-you-can-do" target="_blank" rel="noopener">
-            <div class="res-img"><img src="img/resources/most-good.jpg" alt=""></div>
-            <h5 class="res-title">The Most Good You Can Do <span class="res-author-inline">Peter Singer</span></h5>
-          </a>
-        </div>
-
-        <div class="res-card res-card--book">
-          <a href="https://brianchristian.org/the-alignment-problem/" target="_blank" rel="noopener">
-            <div class="res-img"><img src="img/resources/alignment-problem.jpg" alt=""></div>
-            <h5 class="res-title">The Alignment Problem <span class="res-author-inline">Brian Christian</span></h5>
-          </a>
-        </div>
-
-        <!-- English books — free copy available -->
-        <div class="res-card res-card--book">
-          <a href="https://www.effectivealtruism.org/doing-good-better" target="_blank" rel="noopener">
+          <a href="https://www.effectivealtruism.org/doing-good-better" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/doing-good-better.jpg" alt=""></div>
             <h5 class="res-title">Doing Good Better <span class="res-author-inline">William MacAskill</span></h5>
           </a>
           <hr class="res-hr">
-          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">
+          <a href="https://airtable.com/apppjW9FcMACwrzcD/shrncknVHv6DJPewU" target="_blank" rel="noopener noreferrer" class="res-request">
             <span data-lang="es">Pedir copia gratis</span><span data-lang="en">Request a free copy</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
         </div>
 
         <div class="res-card res-card--book">
-          <a href="https://theprecipice.com" target="_blank" rel="noopener">
+          <a href="https://theprecipice.com" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/the-precipice.jpg" alt=""></div>
             <h5 class="res-title">The Precipice <span class="res-author-inline">Toby Ord</span></h5>
           </a>
           <hr class="res-hr">
-          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">
+          <a href="https://airtable.com/apppjW9FcMACwrzcD/shrncknVHv6DJPewU" target="_blank" rel="noopener noreferrer" class="res-request">
             <span data-lang="es">Pedir copia gratis</span><span data-lang="en">Request a free copy</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
         </div>
 
         <div class="res-card res-card--book">
-          <a href="https://www.thelifeyoucansave.org/book/" target="_blank" rel="noopener">
+          <a href="https://www.thelifeyoucansave.org/book/" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/life-you-can-save.jpg" alt=""></div>
             <h5 class="res-title">The Life You Can Save <span class="res-author-inline">Peter Singer</span></h5>
           </a>
           <hr class="res-hr">
-          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">
+          <a href="https://airtable.com/apppjW9FcMACwrzcD/shrncknVHv6DJPewU" target="_blank" rel="noopener noreferrer" class="res-request">
             <span data-lang="es">Pedir copia gratis</span><span data-lang="en">Request a free copy</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
         </div>
 
         <div class="res-card res-card--book">
-          <a href="https://80000hours.org/book/" target="_blank" rel="noopener">
+          <a href="https://80000hours.org/book/" target="_blank" rel="noopener noreferrer">
             <div class="res-img"><img src="img/resources/80k-book.jpg" alt=""></div>
             <h5 class="res-title">80,000 Hours <span class="res-author-inline">Benjamin Todd</span></h5>
           </a>
           <hr class="res-hr">
-          <a href="https://impactbooks.store/collections/effectivealtruism-org" target="_blank" rel="noopener" class="res-request">
+          <a href="https://airtable.com/apppjW9FcMACwrzcD/shrncknVHv6DJPewU" target="_blank" rel="noopener noreferrer" class="res-request">
             <span data-lang="es">Pedir copia gratis</span><span data-lang="en">Request a free copy</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
@@ -184,7 +225,7 @@
   </section>
 
   <!-- ========== PODCASTS ========== -->
-  <section class="section bg-sand-dark" id="podcasts">
+  <section class="section bg-paper" id="podcasts">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Podcasts</h2>
@@ -192,49 +233,49 @@
 
       <div class="res-grid--podcasts fade-in">
 
-        <a href="https://podcasters.spotify.com/pod/show/equilibrioinadecuado" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://podcasters.spotify.com/pod/show/equilibrioinadecuado" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/podcast-equilibrio.png" alt=""></div>
           <h5 class="res-title">Un equilibrio inadecuado</h5>
-          <div class="res-author">Fernando Folgueiro / Tlön</div>
+          <div class="res-author">Fernando Folgueiro</div>
         </a>
 
-        <a href="https://open.spotify.com/show/1psDYoO45m1ABUkRgEbW1q" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://open.spotify.com/show/1psDYoO45m1ABUkRgEbW1q" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/podcast-ae.jpg" alt=""></div>
           <h5 class="res-title">Altruismo Eficaz</h5>
           <div class="res-author">Tlön</div>
         </a>
 
-        <a href="https://80000hours.org/podcast/effective-altruism-an-introduction/" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://80000hours.org/podcast/effective-altruism-an-introduction/" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-ea-intro.jpg" alt=""></div>
           <h5 class="res-title">Effective Altruism: An Introduction</h5>
           <div class="res-author">The 80,000 Hours Team</div>
         </a>
 
-        <a href="https://pod.link/1580097837" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://pod.link/1580097837" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-cold-takes.jpg" alt=""></div>
           <h5 class="res-title">Cold Takes</h5>
           <div class="res-author">Holden Karnofsky</div>
         </a>
 
-        <a href="https://hearthisidea.com/" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://hearthisidea.com/" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-hear-this-idea.jpg" alt=""></div>
           <h5 class="res-title">Hear This Idea</h5>
           <div class="res-author">Fin Moorhouse &amp; Luca Righetti</div>
         </a>
 
-        <a href="https://www.vox.com/future-perfect-podcast" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://www.vox.com/future-perfect-podcast" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-future-perfect.jpg" alt=""></div>
           <h5 class="res-title">Future Perfect</h5>
           <div class="res-author">Vox</div>
         </a>
 
-        <a href="https://clearerthinkingpodcast.com/" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://clearerthinkingpodcast.com/" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-clearer-thinking.jpg" alt=""></div>
           <h5 class="res-title">Clearer Thinking</h5>
           <div class="res-author">Spencer Greenberg</div>
         </a>
 
-        <a href="https://mindingourway.com/replacing-guilt/" target="_blank" rel="noopener" class="res-card res-card--podcast">
+        <a href="https://mindingourway.com/replacing-guilt/" target="_blank" rel="noopener noreferrer" class="res-card res-card--podcast">
           <div class="res-img"><img src="img/resources/pod-replacing-guilt.jpg" alt=""></div>
           <h5 class="res-title">Replacing Guilt</h5>
           <div class="res-author">Nate Soares</div>
@@ -245,7 +286,7 @@
   </section>
 
   <!-- ========== CAREERS ========== -->
-  <section class="section bg-paper" id="careers">
+  <section class="section bg-sand-dark" id="careers">
     <div class="container">
       <div class="section-header fade-in">
         <h2>
@@ -253,14 +294,14 @@
           <span data-lang="en">Impact Careers</span>
         </h2>
         <p>
-          <span data-lang="es">Tu carrera profesional son ~80,000 horas de trabajo. Es tu recurso más valioso para generar impacto positivo en el mundo.</span>
+          <span data-lang="es">Tu carrera profesional son ~80.000 horas de trabajo. Es tu recurso más valioso para generar impacto positivo en el mundo.</span>
           <span data-lang="en">Your career is ~80,000 working hours. It's your most valuable resource for positive impact in the world.</span>
         </p>
       </div>
 
       <div class="res-grid--orgs fade-in">
 
-        <a href="https://80000hours.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://80000hours.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/80k-hours.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">80,000 Hours</div>
@@ -271,7 +312,7 @@
           </div>
         </a>
 
-        <a href="https://80000hours.org/career-guide/" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://80000hours.org/career-guide/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/80k-hours.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">
@@ -285,7 +326,7 @@
           </div>
         </a>
 
-        <a href="https://80000hours.org/job-board/" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://80000hours.org/job-board/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/80k-hours.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">80,000 Hours Job Board</div>
@@ -296,7 +337,7 @@
           </div>
         </a>
 
-        <a href="https://animaladvocacycareers.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://animaladvocacycareers.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/animal-advocacy.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Animal Advocacy Careers</div>
@@ -312,7 +353,7 @@
   </section>
 
   <!-- ========== EFFECTIVE GIVING ========== -->
-  <section class="section bg-sand-dark" id="giving">
+  <section class="section bg-paper" id="giving">
     <div class="container">
       <div class="section-header fade-in">
         <h2>
@@ -327,7 +368,7 @@
 
       <div class="res-grid--orgs fade-in">
 
-        <a href="https://ayudaefectiva.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://ayudaefectiva.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ayuda-efectiva.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Ayuda Efectiva</div>
@@ -338,29 +379,29 @@
           </div>
         </a>
 
-        <a href="https://www.givewell.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://www.givewell.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/givewell.jpg" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">GiveWell</div>
             <div class="res-desc">
-              <span data-lang="es">El evaluador más riguroso de intervenciones de salud global y desarrollo. Sus organizaciones recomendadas salvan vidas por tan solo $3,000-$5,000 por vida. Publica análisis completos de costo-efectividad de cada intervención.</span>
+              <span data-lang="es">El evaluador más riguroso de intervenciones de salud global y desarrollo. Sus organizaciones recomendadas salvan vidas por tan solo $3.000-$5.000 por vida. Publica análisis completos de costo-efectividad de cada intervención.</span>
               <span data-lang="en">The most rigorous evaluator of global health and development interventions. Their recommended organizations save lives for as little as $3,000-$5,000 per life. Publishes complete cost-effectiveness analyses for each intervention.</span>
             </div>
           </div>
         </a>
 
-        <a href="https://www.givingwhatwecan.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://www.givingwhatwecan.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/gwwc.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Giving What We Can</div>
             <div class="res-desc">
-              <span data-lang="es">Comunidad global de más de 9,000 personas que han prometido donar al menos el 10% de sus ingresos a las organizaciones más efectivas. Ofrece una calculadora de impacto, guías de donación y una plataforma para gestionar tu compromiso.</span>
+              <span data-lang="es">Comunidad global de más de 9.000 personas que han prometido donar al menos el 10% de sus ingresos a las organizaciones más efectivas. Ofrece una calculadora de impacto, guías de donación y una plataforma para gestionar tu compromiso.</span>
               <span data-lang="en">Global community of over 9,000 people who have pledged to donate at least 10% of their income to the most effective organizations. Offers an impact calculator, giving guides, and a platform to manage your pledge.</span>
             </div>
           </div>
         </a>
 
-        <a href="https://animalcharityevaluators.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://animalcharityevaluators.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ace.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Animal Charity Evaluators</div>
@@ -371,7 +412,7 @@
           </div>
         </a>
 
-        <a href="https://funds.effectivealtruism.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://funds.effectivealtruism.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ea-funds.jpg" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">EA Funds</div>
@@ -387,7 +428,7 @@
   </section>
 
   <!-- ========== FUNDING ========== -->
-  <section class="section bg-paper" id="funding">
+  <section class="section bg-sand-dark" id="funding">
     <div class="container">
       <div class="section-header fade-in">
         <h2>
@@ -402,7 +443,7 @@
 
       <div class="res-grid--orgs fade-in">
 
-        <a href="https://funds.effectivealtruism.org/apply-for-funding" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://funds.effectivealtruism.org/apply-for-funding" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ea-funds.jpg" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">EA Funds</div>
@@ -413,18 +454,18 @@
           </div>
         </a>
 
-        <a href="https://coefficientgiving.org" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://coefficientgiving.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/coeff-logo.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Coefficient Giving</div>
             <div class="res-desc">
-              <span data-lang="es">Anteriormente Open Philanthropy. Uno de los mayores financiadores filantrópicos del mundo, con más de $5,000M otorgados desde 2014. Financia investigación y proyectos en 13 áreas incluyendo IA, bioseguridad, bienestar animal y salud global.</span>
+              <span data-lang="es">Anteriormente Open Philanthropy. Uno de los mayores financiadores filantrópicos del mundo, con más de $5.000M otorgados desde 2014. Financia investigación y proyectos en 13 áreas incluyendo IA, bioseguridad, bienestar animal y salud global.</span>
               <span data-lang="en">Formerly Open Philanthropy. One of the world's largest philanthropic funders, with over $5B granted since 2014. Funds research and projects in 13 areas including AI, biosecurity, animal welfare, and global health.</span>
             </div>
           </div>
         </a>
 
-        <a href="https://survivalandflourishing.fund/" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://survivalandflourishing.fund/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/sff-logo.svg" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Survival and Flourishing Fund</div>
@@ -435,7 +476,7 @@
           </div>
         </a>
 
-        <a href="https://futureoflife.org/grants/" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://futureoflife.org/grants/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/fli-logo2.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Future of Life Institute</div>
@@ -446,7 +487,7 @@
           </div>
         </a>
 
-        <a href="https://www.charityentrepreneurship.com/" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://www.charityentrepreneurship.com/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ce-logo.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Charity Entrepreneurship</div>
@@ -457,7 +498,7 @@
           </div>
         </a>
 
-        <a href="https://www.mercatus.org/emergent-ventures" target="_blank" rel="noopener" class="res-card res-card--org">
+        <a href="https://www.mercatus.org/emergent-ventures" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
           <img src="img/resources/ev-logo.png" alt="" class="res-logo">
           <div class="res-body">
             <div class="res-title">Emergent Ventures</div>
@@ -490,7 +531,7 @@
         </h3>
         <div class="res-grid--orgs">
 
-          <a href="https://altruismoeficaz.net" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://altruismoeficaz.net" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-net.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">altruismoeficaz.net</div>
@@ -501,7 +542,7 @@
             </div>
           </a>
 
-          <a href="https://www.altruismoeficaz.org" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.altruismoeficaz.org" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-hispano.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Hispanohablantes</div>
@@ -512,7 +553,7 @@
             </div>
           </a>
 
-          <a href="https://www.altruismoracional.com" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.altruismoracional.com" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ar-newsletter.jpg" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">Altruismo Racional (newsletter)</div>
@@ -524,7 +565,7 @@
             </div>
           </a>
 
-          <a href="https://largoplacismo.com" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://largoplacismo.com" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/largoplacismo.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">Largoplacismo</div>
@@ -535,7 +576,7 @@
             </div>
           </a>
 
-          <a href="https://www.futurolatam.com" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.futurolatam.com" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/futuro-latam.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">Futuro Latinoamérica</div>
@@ -557,7 +598,7 @@
         </h3>
         <div class="res-grid--orgs">
 
-          <a href="https://altruismoeficaz.net.ar/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://altruismoeficaz.net.ar/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-argentina.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Argentina</div>
@@ -568,7 +609,7 @@
             </div>
           </a>
 
-          <a href="https://www.instagram.com/altruismoeficazuc/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.instagram.com/altruismoeficazuc/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-chile.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Chile</div>
@@ -579,7 +620,7 @@
             </div>
           </a>
 
-          <a href="https://www.instagram.com/aeuniandes/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.instagram.com/aeuniandes/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-uniandes.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Uniandes</div>
@@ -590,7 +631,7 @@
             </div>
           </a>
 
-          <a href="https://www.altruismoeficazbrasil.com.br/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.altruismoeficazbrasil.com.br/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-brasil.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Brasil</div>
@@ -601,7 +642,7 @@
             </div>
           </a>
 
-          <a href="https://www.instagram.com/ae_queretaro/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.instagram.com/ae_queretaro/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ae-queretaro.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">AE Querétaro</div>
@@ -612,7 +653,7 @@
             </div>
           </a>
 
-          <a href="https://www.instagram.com/ea_upy/" target="_blank" rel="noopener" class="res-card res-card--org">
+          <a href="https://www.instagram.com/ea_upy/" target="_blank" rel="noopener noreferrer" class="res-card res-card--org">
             <img src="img/resources/ea-upy.png" alt="" class="res-logo">
             <div class="res-body">
               <div class="res-title">EA UPY</div>
@@ -636,25 +677,25 @@
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" style="color: white;">
             <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-            <span>AE Bogotá</span>
+            <span>Altruismo Eficaz Bogotá</span>
           </a>
           <p>
             <span data-lang="es">Comunidad de Altruismo Eficaz en Bogotá, Colombia. Combinamos compasión y razón para hacer el mayor bien posible.</span>
             <span data-lang="en">Effective Altruism community in Bogotá, Colombia. Combining compassion and reason to do the most good.</span>
           </p>
           <div class="footer-social">
-            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener noreferrer" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
           </div>
         </div>
 
         <div>
-          <h4><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></h4>
+          <h4><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></h4>
           <div class="footer-links">
-            <a href="get-involved.html"><span data-lang="es">Únete</span><span data-lang="en">Join Us</span></a>
+            <a href="get-involved.html"><span data-lang="es">Pasa a la acción</span><span data-lang="en">Take action</span></a>
             <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-            <a href="get-involved.html#one-on-one">1-on-1</a>
-            <a href="get-involved.html#volunteer"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
+            <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
+            <a href="team.html#join"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
           </div>
         </div>
 
@@ -679,8 +720,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 AE Bogotá. <span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
-        <a href="mailto:contacto@eabogota.org">contacto@eabogota.org</a>
+        <span>&copy; 2026 Altruismo Eficaz Bogotá. <span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
       </div>
     </div>
   </footer>

@@ -8,10 +8,13 @@
   <meta property="og:title" content="Eventos — Altruismo Eficaz Bogotá">
   <meta property="og:description" content="Eventos de Altruismo Eficaz en Bogotá: charlas, talleres, grupos de lectura y encuentros sociales.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://website-three-orpin.vercel.app/img/hero.jpg">
+  <link rel="canonical" href="https://website-three-orpin.vercel.app/events.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +24,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo">
         <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-        <span>AE Bogotá</span>
+        <span>Altruismo Eficaz Bogotá</span>
       </a>
       <div class="nav-links">
-        <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-        <a href="resources.html"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+        <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+        <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
         <a href="events.html" class="active"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-        <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+        <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
         <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+        <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
       </div>
       <div class="nav-right">
         <div class="lang-toggle">
@@ -46,12 +49,12 @@
   <!-- Mobile Nav -->
   <div class="mobile-nav">
     <a href="index.html"><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a>
-    <a href="about-ea.html"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span></a>
-    <a href="resources.html"><span data-lang="es">Recursos</span><span data-lang="en">Resources</span></a>
+    <div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true"><span data-lang="es">Aprende</span><span data-lang="en">Learn</span><svg class="nav-dropdown-caret" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/></svg></button><div class="nav-dropdown-menu" role="menu"><a href="about-ea.html" role="menuitem"><span data-lang="es">Ensayo introductorio</span><span data-lang="en">Intro essay</span></a><a href="faq.html" role="menuitem"><span data-lang="es">Preguntas frecuentes</span><span data-lang="en">FAQs</span></a><a href="recursos-espanol.html" role="menuitem"><span data-lang="es">Recursos en español</span><span data-lang="en">Spanish resources</span></a><a href="resources.html" role="menuitem"><span data-lang="es">Videos, libros, podcasts</span><span data-lang="en">Videos, books, podcasts</span></a><a href="https://www.effectivealtruism.org/courses/introductory-program" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Curso introductorio online</span><span data-lang="en">Online intro course</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://www.effectivealtruism.org/stories" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Historias de la comunidad</span><span data-lang="en">Community stories</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><span class="nav-dropdown-placeholder" role="menuitem" aria-disabled="true"><span data-lang="es">Newsletter de EA</span><span data-lang="en">EA Newsletter</span></span><a href="https://forum.effectivealtruism.org/handbook" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Manual de EA</span><span data-lang="en">EA Handbook</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noopener noreferrer" role="menuitem"><span data-lang="es">Foro de EA</span><span data-lang="en">EA Forum</span><span class="nav-dropdown-ext" aria-hidden="true">↗</span></a></div></div>
+    <a href="get-involved.html"><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></a>
     <a href="events.html" class="active"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span></a>
-    <a href="get-involved.html"><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></a>
+    <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
     <a href="team.html"><span data-lang="es">Equipo</span><span data-lang="en">Team</span></a>
+    <a href="https://www.effectivealtruism.org/ea-global" target="_blank" rel="noopener noreferrer"><span data-lang="es">Conferencias</span><span data-lang="en">Conferences</span><span class="nav-ext" aria-hidden="true">↗</span></a>
   </div>
 
   <!-- Page Header -->
@@ -82,20 +85,19 @@
         </h2>
       </div>
 
-      <div class="luma-placeholder fade-in">
-        <!-- <iframe src="https://lu.ma/embed/calendar/cal-XXXXX/events" width="100%" height="600" frameborder="0" allowfullscreen></iframe> -->
-        <h3>
-          <span data-lang="es">Calendario de eventos</span>
-          <span data-lang="en">Events Calendar</span>
-        </h3>
-        <p>
-          <span data-lang="es">Aquí se mostrará nuestro calendario de Lu.ma con todos los próximos eventos.</span>
-          <span data-lang="en">Our Lu.ma calendar with all upcoming events will be displayed here.</span>
-        </p>
-        <a href="https://lu.ma" target="_blank" rel="noopener" class="btn btn-primary">
-          <span data-lang="es">Ver en Lu.ma</span>
-          <span data-lang="en">View on Lu.ma</span>
-        </a>
+      <div class="luma-embed fade-in">
+        <iframe
+          src="https://luma.com/embed/calendar/cal-B63HXDrWdktnGOX/events"
+          width="100%"
+          height="400"
+          frameborder="0"
+          style="border: 1px solid #bfcbda88; border-radius: 8px;"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"
+          allowfullscreen
+          aria-hidden="false"
+          tabindex="0"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </section>
@@ -175,9 +177,9 @@
           <span data-lang="en">If you have an idea for a talk, workshop, or activity related to EA, we'd love to hear it.</span>
         </p>
       </div>
-      <a href="https://tally.so/r/PdXjOd" target="_blank" rel="noopener" class="btn btn-light btn-lg">
-        <span data-lang="es">Contáctanos</span>
-        <span data-lang="en">Contact us</span>
+      <a href="https://tally.so/r/J9J1aY" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg">
+        <span data-lang="es">Propón un evento</span>
+        <span data-lang="en">Propose an event</span>
       </a>
     </div>
   </section>
@@ -189,25 +191,25 @@
         <div class="footer-brand">
           <a href="index.html" class="nav-logo" style="color: white;">
             <img src="img/logo-ea.png" alt="EA" class="nav-logo-icon">
-            <span>AE Bogotá</span>
+            <span>Altruismo Eficaz Bogotá</span>
           </a>
           <p>
             <span data-lang="es">Comunidad de Altruismo Eficaz en Bogotá, Colombia. Combinamos compasión y razón para hacer el mayor bien posible.</span>
             <span data-lang="en">Effective Altruism community in Bogotá, Colombia. Combining compassion and reason to do the most good.</span>
           </p>
           <div class="footer-social">
-            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://www.instagram.com/aebogota/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://co.linkedin.com/company/altruismo-eficaz-colombia" target="_blank" rel="noopener noreferrer" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
           </div>
         </div>
 
         <div>
-          <h4><span data-lang="es">Participa</span><span data-lang="en">Get Involved</span></h4>
+          <h4><span data-lang="es">Actúa</span><span data-lang="en">Take action</span></h4>
           <div class="footer-links">
-            <a href="get-involved.html"><span data-lang="es">Únete</span><span data-lang="en">Join Us</span></a>
+            <a href="get-involved.html"><span data-lang="es">Pasa a la acción</span><span data-lang="en">Take action</span></a>
             <a href="events.html"><span data-lang="es">Eventos</span><span data-lang="en">Events</span></a>
-            <a href="get-involved.html#one-on-one">1-on-1</a>
-            <a href="get-involved.html#volunteer"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
+            <a href="opportunities.html"><span data-lang="es">Oportunidades</span><span data-lang="en">Opportunities</span></a>
+            <a href="team.html#join"><span data-lang="es">Voluntariado</span><span data-lang="en">Volunteer</span></a>
           </div>
         </div>
 
@@ -230,8 +232,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 AE Bogotá</span>
-        <a href="mailto:contacto@eabogota.org">contacto@eabogota.org</a>
+        <span>&copy; 2026 Altruismo Eficaz Bogotá</span>
       </div>
     </div>
   </footer>
