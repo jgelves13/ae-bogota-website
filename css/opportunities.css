@@ -425,20 +425,30 @@
   color: var(--text-primary);
 }
 
-.opp-card-date {
+.opp-card-deadline {
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.3;
   color: var(--text-secondary);
   white-space: nowrap;
 }
 
-.opp-card-date--mobile {
+.opp-deadline--urgent {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.opp-deadline--closed {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.opp-card-deadline--mobile {
   display: none;
 }
 
-.opp-card-date--desktop {
+.opp-card-deadline--desktop {
   display: inline-block;
 }
 
@@ -736,11 +746,11 @@
     padding-right: 24px;
   }
 
-  .opp-card-date--desktop {
+  .opp-card-deadline--desktop {
     display: none;
   }
 
-  .opp-card-date--mobile {
+  .opp-card-deadline--mobile {
     display: inline-block;
   }
 

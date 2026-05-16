@@ -124,26 +124,38 @@
     return false;
   }
 
-  // --- Relative date formatting (ES + EN) ---
-  function relativeDate(dateStr) {
+  // --- Deadline formatting (ES + EN) ---
+  function formatDeadline(deadline) {
     var l = lang();
-    var now = new Date();
-    var d = new Date(dateStr);
-    var diff = Math.floor((now - d) / 86400000);
-    if (l === 'en') {
-      if (diff <= 0) return 'Today';
-      if (diff === 1) return '1 day ago';
-      if (diff < 7) return diff + ' days ago';
-      if (diff < 14) return '1 week ago';
-      if (diff < 30) return Math.floor(diff / 7) + ' weeks ago';
-      return Math.floor(diff / 30) + ' month(s) ago';
+    if (!deadline || deadline === 'rolling') {
+      return l === 'en' ? 'Rolling' : 'Continua';
     }
-    if (diff <= 0) return 'Hoy';
-    if (diff === 1) return 'Hace 1 día';
-    if (diff < 7) return 'Hace ' + diff + ' días';
-    if (diff < 14) return 'Hace 1 semana';
-    if (diff < 30) return 'Hace ' + Math.floor(diff / 7) + ' semanas';
-    return 'Hace ' + Math.floor(diff / 30) + ' mes(es)';
+    var d = new Date(deadline + 'T00:00:00');
+    var now = new Date();
+    now.setHours(0,0,0,0);
+    var diff = Math.floor((d - now) / 86400000);
+    if (diff < 0) return l === 'en' ? 'Closed' : 'Cerrada';
+    if (diff === 0) return l === 'en' ? 'Today!' : '¡Hoy!';
+    if (diff === 1) return l === 'en' ? '1 day left' : '1 día restante';
+    if (diff < 7) return l === 'en' ? diff + ' days left' : diff + ' días restantes';
+    if (diff < 14) return l === 'en' ? '1 week left' : '1 semana restante';
+    if (diff < 30) return l === 'en' ? Math.floor(diff / 7) + ' weeks left' : Math.floor(diff / 7) + ' semanas restantes';
+    // Show date
+    var months_en = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var months_es = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+    var months = l === 'en' ? months_en : months_es;
+    return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  }
+
+  function deadlineClass(deadline) {
+    if (!deadline || deadline === 'rolling') return '';
+    var d = new Date(deadline + 'T00:00:00');
+    var now = new Date();
+    now.setHours(0,0,0,0);
+    var diff = Math.floor((d - now) / 86400000);
+    if (diff < 0) return 'opp-deadline--closed';
+    if (diff <= 7) return 'opp-deadline--urgent';
+    return '';
   }
 
   // --- DOM helpers ---
@@ -247,7 +259,10 @@
     orgs.appendChild(orgLink);
     summary.appendChild(orgs);
 
-    summary.appendChild(el('div', 'opp-card-date opp-card-date--mobile', relativeDate(opp.date)));
+    var dlMobile = el('div', 'opp-card-deadline opp-card-deadline--mobile', formatDeadline(opp.deadline));
+    var dlcMobile = deadlineClass(opp.deadline);
+    if (dlcMobile) dlMobile.classList.add(dlcMobile);
+    summary.appendChild(dlMobile);
 
     var footer = el('div', 'opp-card-footer');
     var headerChips = el('div', 'opp-card-chips');
@@ -255,7 +270,10 @@
     headerChips.appendChild(chip('cause', opp.cause));
     headerChips.appendChild(chip('location', opp.location));
     footer.appendChild(headerChips);
-    footer.appendChild(el('div', 'opp-card-date opp-card-date--desktop', relativeDate(opp.date)));
+    var dlDesktop = el('div', 'opp-card-deadline opp-card-deadline--desktop', formatDeadline(opp.deadline));
+    var dlcDesktop = deadlineClass(opp.deadline);
+    if (dlcDesktop) dlDesktop.classList.add(dlcDesktop);
+    footer.appendChild(dlDesktop);
     summary.appendChild(footer);
 
     header.appendChild(summary);
@@ -334,7 +352,12 @@
 
   // --- Render ---
   function render() {
+    var now = new Date();
+    now.setHours(0,0,0,0);
     var sorted = OPPORTUNITIES.slice().sort(function (a, b) {
+      var aExp = a.deadline && a.deadline !== 'rolling' && new Date(a.deadline + 'T00:00:00') < now;
+      var bExp = b.deadline && b.deadline !== 'rolling' && new Date(b.deadline + 'T00:00:00') < now;
+      if (aExp !== bExp) return aExp ? 1 : -1;
       return new Date(b.date) - new Date(a.date);
     });
     var filtered = sorted.filter(matchesFilters);
